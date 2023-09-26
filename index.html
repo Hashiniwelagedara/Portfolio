@@ -11,7 +11,7 @@
 <div id="header">
 <div class="container">
 <nav>
-    <img src="Images/pngimg.com - letter_h_PNG88.png " class="logo">
+    <img src="Images/logo-hashi.png " class="logo">
     <ul>
         <li><a href="#"> Home </a> </li>
         <li><a href="#"> About </a> </li>
@@ -19,9 +19,74 @@
         <li><a href="#"> Contact </a> </li>
     </ul>
 </nav>
+<div class="header-text">
+    <p> Software Engineer </p>
+    <h1> Hi, I'm <span>Hashini Welagedara</span> <br> From Sabaragamuwa University Of Sri Lanka.</h1>
+</div>
 </div>    
+</div>
+<!-- ------------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/my-removebg-preview.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About me </h1>
+                <p> I am an ambitious undergraduate student at the Sabaragamuwa University of Sri Lanka who is a young, creative-minded, multi-tasking personality, problem-solving, quick adaptive, team member with strong team collaboration and always up for a new adventure. I am actively seeking an internship opportunity that will serve as a platform for me to leverage my capabilities to the fullest I'm a fast learner, .</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces </li>
+                        <li><span>Web Development</span><br>Web App Development </li>
+                        <li><span>App Development</span><br>Building Android/iOS Apps </li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - Present</span><br>Currently reading in 3rd Year Department of Computing & Information Systems Sabaragamuwa University of Sri Lanka </li>
+                        <li><span>2018 - G.C.E. (A/L) Examination </span><br> CP/KOTH/Delta Gamunupura Maha Vidyalaya.</li>
+                        <li><span>2019 </span><br>BritishWay English Academy - Nittambuwa.</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>2021-2022</span><br>A Team Leader of AIESEC in Sabaragamuwa University of
+                            Sri Lanka </li>
+                        <li><span>2023</span><br>Volunteering in INSL 2023 organized by IEEE student
+                            branch of Sabaragamuwa University of Sri Lanka.</li>
+                        <li><span>2023</span><br>Volunteering in IEEE student branch of Sabaragamuwa
+                            University of Sri Lanka. </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </header>
+<script>
+ var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents");
+ 
+ function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");   
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");   
+    } event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+ }
+
+</script>
     </body>
 </html> 

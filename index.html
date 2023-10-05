@@ -6,6 +6,7 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title> Personal Portfolio Website </title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6e81c70f31.js" crossorigin="anonymous"></script>
     </head>
     <body>
 <div id="header">
@@ -40,7 +41,7 @@
                     <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
-                </div>
+                  </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>UI/UX</span><br>Designing Web/App interfaces </li>
@@ -64,10 +65,41 @@
                             branch of Sabaragamuwa University of Sri Lanka.</li>
                         <li><span>2023</span><br>Volunteering in IEEE student branch of Sabaragamuwa
                             University of Sri Lanka. </li>
+                        <li><span>2023</span><br>Volunteering in Innovation Nation Sri Lanka (INSL)
+                            organized by the IEEE student branch of the Sabaragamuwa University of Sri Lanka. 
+                             </li>
 
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-----------services------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Design </h2>
+                <p>I offer HTML, CSS, responsive design, UI/UX guidelines, and a talent for transforming concepts into beautiful digital experiences</p>
+                <a href="#"> learn more </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2> UI/UX Design </h2>
+                <p>I excel in UI/UX design, creating intuitive and visually pleasing digital experiences that captivate users and enhance usability</p>
+                <a href="#"> learn more</a> 
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2> App Design </h2>
+                <p>I'm proficient in app design, crafting engaging and user-centric mobile experiences</p>
+                <a href="#"> learn more</a>
+            </div>
+
         </div>
     </div>
 </div>
@@ -83,7 +115,8 @@
     }
     for(tabcontent of tabcontents){
         tabcontent.classList.remove("active-tab");   
-    } event.currentTarget.classList.add("active-link");
+    } 
+    event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
  }
 

@@ -1,125 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UV-Compatabile" content="IE-edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title> Personal Portfolio Website </title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/6e81c70f31.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-<div id="header">
-<div class="container">
-<nav>
-    <img src="Images/logo-hashi.png " class="logo">
-    <ul>
-        <li><a href="#"> Home </a> </li>
-        <li><a href="#"> About </a> </li>
-        <li><a href="#"> Portfolio </a> </li>
-        <li><a href="#"> Contact </a> </li>
-    </ul>
-</nav>
-<div class="header-text">
-    <p> Software Engineer </p>
-    <h1> Hi, I'm <span>Hashini Welagedara</span> <br> From Sabaragamuwa University Of Sri Lanka.</h1>
-</div>
-</div>    
-</div>
-<!-- ------------about----------- -->
-<div id="about">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UV-Compatabile" content="IE-edge" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6e81c70f31.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo-hashi.png " class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#portfolio"> My Work </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <i class="fa-solid fa-xmark close-icon" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hi, I'm <span>Hashini Welagedara</span> <br />
+            From Sabaragamuwa University Of Sri Lanka.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------about----------- -->
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="Images/my-removebg-preview.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title"> About me </h1>
-                <p> I am an ambitious undergraduate student at the Sabaragamuwa University of Sri Lanka who is a young, creative-minded, multi-tasking personality, problem-solving, quick adaptive, team member with strong team collaboration and always up for a new adventure. I am actively seeking an internship opportunity that will serve as a platform for me to leverage my capabilities to the fullest I'm a fast learner, .</p>
-                
-                <div class="tab-titles">
-                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
-                  </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces </li>
-                        <li><span>Web Development</span><br>Web App Development </li>
-                        <li><span>App Development</span><br>Building Android/iOS Apps </li>
+          <div class="about-col-1">
+            <img src="Images/my-removebg-preview.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I am an ambitious undergraduate student at the Sabaragamuwa
+              University of Sri Lanka who is a young, creative-minded,
+              multi-tasking personality, problem-solving, quick adaptive, team
+              member with strong team collaboration and always up for a new
+              adventure. I am actively seeking an internship opportunity that
+              will serve as a platform for me to leverage my capabilities to the
+              fullest I'm a fast learner, .
+            </p>
 
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2020 - Present</span><br>Currently reading in 3rd Year Department of Computing & Information Systems Sabaragamuwa University of Sri Lanka </li>
-                        <li><span>2018 - G.C.E. (A/L) Examination </span><br> CP/KOTH/Delta Gamunupura Maha Vidyalaya.</li>
-                        <li><span>2019 </span><br>BritishWay English Academy - Nittambuwa.</li> 
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experiences">
-                    <ul>
-                        <li><span>2021-2022</span><br>A Team Leader of AIESEC in Sabaragamuwa University of
-                            Sri Lanka </li>
-                        <li><span>2023</span><br>Volunteering in INSL 2023 organized by IEEE student
-                            branch of Sabaragamuwa University of Sri Lanka.</li>
-                        <li><span>2023</span><br>Volunteering in IEEE student branch of Sabaragamuwa
-                            University of Sri Lanka. </li>
-                        <li><span>2023</span><br>Volunteering in Innovation Nation Sri Lanka (INSL)
-                            organized by the IEEE student branch of the Sabaragamuwa University of Sri Lanka. 
-                             </li>
-
-                    </ul>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experiences')">
+                Experiences
+              </p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - Present</span><br />Currently reading in 3rd Year
+                  Department of Computing & Information Systems Sabaragamuwa
+                  University of Sri Lanka
+                </li>
+                <li>
+                  <span>2018 - G.C.E. (A/L) Examination </span><br />
+                  CP/KOTH/Delta Gamunupura Maha Vidyalaya.
+                </li>
+                <li>
+                  <span>2019 </span><br />BritishWay English Academy -
+                  Nittambuwa.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+              <ul>
+                <li>
+                  <span>2021-2022</span><br />A Team Leader of AIESEC in
+                  Sabaragamuwa University of Sri Lanka
+                </li>
+                <li>
+                  <span>2023</span><br />Volunteering in INSL 2023 organized by
+                  IEEE student branch of Sabaragamuwa University of Sri Lanka.
+                </li>
+                <li>
+                  <span>2023</span><br />Volunteering in IEEE student branch of
+                  Sabaragamuwa University of Sri Lanka.
+                </li>
+                <li>
+                  <span>2023</span><br />Volunteering in Innovation Nation Sri
+                  Lanka (INSL) organized by the IEEE student branch of the
+                  Sabaragamuwa University of Sri Lanka.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-----------services------------------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title"> My Services </h1>
+    <!-----------services------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2> Web Design </h2>
-                <p>I offer HTML, CSS, responsive design, UI/UX guidelines, and a talent for transforming concepts into beautiful digital experiences</p>
-                <a href="#"> learn more </a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2> UI/UX Design </h2>
-                <p>I excel in UI/UX design, creating intuitive and visually pleasing digital experiences that captivate users and enhance usability</p>
-                <a href="#"> learn more</a> 
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2> App Design </h2>
-                <p>I'm proficient in app design, crafting engaging and user-centric mobile experiences</p>
-                <a href="#"> learn more</a>
-            </div>
-
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I offer HTML, CSS, responsive design, UI/UX guidelines, and a
+              talent for transforming concepts into beautiful digital
+              experiences
+            </p>
+            <a href="#"> learn more </a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I excel in UI/UX design, creating intuitive and visually pleasing
+              digital experiences that captivate users and enhance usability
+            </p>
+            <a href="#"> learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              I'm proficient in app design, crafting engaging and user-centric
+              mobile experiences
+            </p>
+            <a href="#"> learn more</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+    <!-- ----------------Portfolio-------------  -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/what-affects-the-price-of-a-phone-scaled.jpg" />
+            <div class="layer">
+              <h3>Smart Grocery Shopping List App</h3>
+              <p>
+                ListMe is an eco-friendly mobile application revolutionizing
+                grocery shopping for both sighted and visually impaired users.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/what-affects-the-price-of-a-phone-scaled.jpg" />
+            <div class="layer">
+              <h3>To Do App</h3>
+              <p>
+                This App is creating for create to-do lists. Users can add tasks
+                and mark them when they are completed. This build using Flutter
+                and Firebase.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/what-affects-the-price-of-a-phone-scaled.jpg" />
+            <div class="layer">
+              <h3>Resturent Website</h3>
+              <p>
+                This website is creating for a restaurant. Users can see the
+                special menu plans and users can pre-order foods.This build
+                using HTML, CSS and JavaScript.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="index2.html">See More</a>
+      </div>
+    </div>
 
-</header>
-<script>
- var tablinks = document.getElementsByClassName("tab-links");
- var tabcontents = document.getElementsByClassName("tab-contents");
- 
- function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");   
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");   
-    } 
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
- }
+    <!--------------contact--------- -->
 
-</script>
-    </body>
-</html> 
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>0719321242</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Images/myCV.pdf.pdf" download class="btn btn2"
+              >Downlord CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @hashi</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      function openmenu() {
+        document.getElementById("sidemenu").style.right = "0";
+      }
+
+      function closemenu() {
+        document.getElementById("sidemenu").style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwZKkNCRqqbQAgTbKPS8q30VdkGRNrM8Ihr7ZxpPyXEiRa0YJp4fJ0IYENnEEEx0PuB/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
